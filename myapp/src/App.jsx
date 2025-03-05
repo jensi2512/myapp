@@ -2,8 +2,9 @@ import Home from "./Component/Home"
 import About from "./Component/About"
 import Navbar from "./Navbar"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 function App() {
-  return <>
+  return (<>
     {/* <h1>hello</h1> */}
     <BrowserRouter>
       <Navbar />
@@ -13,6 +14,7 @@ function App() {
       </Routes>
     </BrowserRouter>
   </>
+  )
 }
 
 export default App
