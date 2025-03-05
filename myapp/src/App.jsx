@@ -3,7 +3,7 @@ import About from "./Component/About"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return <>
-    <h1>hello</h1>
+    {/* <h1>hello</h1> */}
     <BrowserRouter>
       <Navbar />
       <Routes>
