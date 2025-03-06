@@ -29,7 +29,6 @@ function About() {
                         marginTop: '20px',
                     }}
                 ></div>
-                <p>Selected Color: {selectedColor}</p>
             </div>
         </>
     )
