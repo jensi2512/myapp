@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 function About() {
 
-    const [formData, setFormData] = useState({ firstname: "", secondname: "", email: "", phonenumber: "" })
+    const [formData, setFormData] = useState({ firstname: "", secondname: "", email: "", phonenumber: "", password: "" })
     const [data, setData] = useState([])
 
     function handleSubmit(e) {
         e.preventDefault()
         setData((preval) => [...preval, formData])
-        setFormData({ firstname: "", secondname: "", email: "", phonenumber: "" })
+        setFormData({ firstname: "", secondname: "", email: "", phonenumber: "", password: "" })
     }
 
     function handleChange(e) {
@@ -35,6 +35,9 @@ function About() {
                                 <div className="input-group mb-3">
                                     <input type="number" className="form-control" placeholder="Phonenumber" aria-label="Phonenumber" aria-describedby="basic-addon1" value={formData.phonenumber} name='phonenumber' onChange={handleChange} />
                                 </div>
+                                <div className="input-group mb-3">
+                                    <input type="password" className="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" value={formData.password} name='password' onChange={handleChange} />
+                                </div>
                                 <button type="submit" className="btn btn-success">Submit</button>
                             </form>
                         </div>
@@ -50,6 +53,7 @@ function About() {
                                         <th>Secondname</th>
                                         <th>Email</th>
                                         <th>Phonenumber</th>
+                                        <th>Password</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -59,6 +63,7 @@ function About() {
                                             <td>{ele.secondname}</td>
                                             <td>{ele.email}</td>
                                             <td>{ele.phonenumber}</td>
+                                            <td>{ele.password}</td>
                                         </tr>
                                     ))}
                                 </tbody>
