@@ -19,6 +19,7 @@ function About() {
     return (
         <div>
             <div>
+                <h1>Information</h1>
                 <div className="container mt-5">
                     <div className="row">
                         <div className="col-5 m-auto">
