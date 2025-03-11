@@ -7,7 +7,7 @@ function Home() {
   const [phonenumber, setPhonenumber] = useState("")
   const [address, setAddress] = useState("")
   const [data, setData] = useState([])
-
+ 
   function handleSubmit(e) {
     e.preventDefault()
     setData((preval) => [...preval, { firstname, secondname, email, phonenumber }])
