@@ -3,8 +3,11 @@ import  axios from 'axios'
 const API = "http://localhost:3003/users"
 
 async function getData(){
-  const response =  await axios.get(API)
-  return response.data
+  try{const response =  await axios.get(API)
+  return response.data}
+  catch(error){
+    console.log(error)
+  }
 }
 
 async function postData(obj){
