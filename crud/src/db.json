@@ -1,9 +1,18 @@
 {
-    "users" : [
-        {
-            "username" : "jensi",
-            "email" : "jensipatel@gmail.com",
-            "mobile" : "9874563212"
-        }
-    ]
+  "users": [
+    {
+      "username": "jensi",
+      "email": "jensipatel@gmail.com",
+      "mobile": "9874563212",
+      "address": "xyz Mehsana",
+      "id": "04aa"
+    },
+    {
+      "id": "0b37",
+      "username": "jensi",
+      "email": "jensipatel@gmail.com",
+      "mobile": "07016693435",
+      "address": "mehsana"
+    }
+  ]
 }
