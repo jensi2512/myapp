@@ -12,7 +12,7 @@ function App() {
               <Route path='/form' element={<Form/>}/>
            </Routes>
            <ToastContainer
-              position="bottom-right"
+              position="top-right"
               
            />
         </BrowserRouter>
