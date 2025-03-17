@@ -1,10 +1,12 @@
 import  axios from 'axios'
 
-const API = "http://localhost:3003/users"
+const API = "http://localhost:3002/users"
 
 async function getData(){
-  try{const response =  await axios.get(API)
-  return response.data}
+  try{
+    const response =  await axios.get(API)
+    return response.data
+  }
   catch(error){
     console.log(error)
   }
@@ -18,5 +20,13 @@ async function postData(obj){
   }
 }
 
+async function deleteData(id){
+  try {
+    await axios.delete(`http://localhost:3002/users/${id}`)
+  } catch (error) {
+    console.log(error)
+  }
+}
 
-export {getData, postData}
+
+export {getData, postData, deleteData}
